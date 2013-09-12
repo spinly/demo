@@ -1,0 +1,34 @@
+{
+  "name": "demo",
+  "repo": "spinly/demo",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "spinly/navbar": "*",
+    "spinly/type": "*",
+    "spinly/navs": "*",
+    "spinly/scaffolding": "*",
+    "spinly/grid": "*",
+    "spinly/vars": "*",
+    "spinly/mixins": "*",
+    "spinly/normalize": "*",
+    "spinly/print": "*",
+    "spinly/forms": "*",
+    "spinly/button": "*",
+    "spinly/dropdown-menu": "*",
+    "spinly/tables": "*",
+    "spinly/animations": "*",
+    "spinly/utilities": "*",
+    "timoxley/font-awesome": "*",
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.styl"
+  ]
+}

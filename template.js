@@ -1,0 +1,1 @@
+module.exports = '<h3>ASD</h3>';

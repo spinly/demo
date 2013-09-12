@@ -1,0 +1,79 @@
+html
+  head
+    title demo
+    script(src='build/build.js')
+    link(rel='stylesheet', href='build/build.css')
+
+  header.navbar.navbar-fixed-top.navbar-default(role="navigation")
+    .container
+      nav
+        mixin li
+          li(attributes): a(href="#")
+            block
+
+        .navbar-header
+          a(href="#").navbar-brand
+            img(src="EnsoLogo.png").logo
+
+        ul.nav.navbar-nav.navbar-right.navbar-user
+          li.dropdown
+            a(data-toggle="dropdown", href="#").icon: i.icon-user.icon-large
+            ul.dropdown-menu(role="menu")
+
+              +li Overview
+              +li
+                | Bank Account
+                small.pad-left 2,307 Points
+
+              +li Orders
+              +li History
+              +li My Profile
+              +li Programs
+              +li Sign Out
+
+          li.navbar-button-container
+            button(type="button").btn.btn-primary Redeem 2,307
+
+        ul.nav.navbar-nav.navbar-right
+          +li Wall of Fame
+          +li Give
+          +li Catalog
+          +li Toolbox
+
+          li.separator
+
+  .container.main-container
+
+    main.row
+      .sidenav.col-md-3
+        p.lead Welcome!
+        p.
+          Here's where we appreciate people who do great
+          work. Because celebrating great work inspires
+          people to invent, to create, to discover, and grow.
+
+      .content.col-md-9
+        img.bg(src="batcave.jpg")
+        .inner
+          .jumbotext
+            | Create,<br/>
+            | Discover,<br/>
+            | and<br/>
+            | Grow
+
+    footer.row
+      ul
+        mixin li
+          li.col-md-3(attributes)
+            a(href="#")
+              block
+
+        +li.col-md-offset-3 Our Great Work
+        +li Career Achievement
+        +li My Wellness
+
+
+
+  :coffeescript
+    console.log 'Testing demo'
+    require "demo"

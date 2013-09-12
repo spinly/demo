@@ -1,0 +1,58 @@
+// Core variables and mixins
+@import spinly-vars
+@import spinly-mixins
+
+// Reset
+@import spinly-normalize
+@import spinly-print
+
+// Core styles
+@import spinly-scaffolding
+@import spinly-type
+@import spinly-grid
+@import spinly-tables
+
+// Component styles
+@import spinly-animations
+@import spinly-dropdown-menu
+@import spinly-navs
+@import spinly-navbar
+
+// Utility classes
+@import spinly-utilities
+
+@import 'node_modules/nib'
+@import 'timoxley-font-awesome/css/font-awesome.css'
+
+main
+  margin-top ($navbar-height + 50px)
+  background white
+  border 1px solid rgba(black, 0.2)
+  box-shadow 0 1px 5px rgba(black, 0.1)
+
+  .sidenav
+    padding 20px
+
+  .content
+    padding-left 0
+    padding-right 0
+    .bg
+      max-width 100%
+    .inner
+      absolute top
+      .jumbotext
+        font-weight bold
+        font-size 50px
+        line-height 1.3em
+        padding 50px 60px
+        color white
+        text-transform uppercase
+
+.main-container
+  footer
+    ul
+      padding 0
+    li
+      padding-top 10px
+      border-left 1px solid rgba(black, .15)
+
